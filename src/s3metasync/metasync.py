@@ -40,7 +40,7 @@ class S3MetaSync(object):
                 file_name, 
                 self.bucket, 
                 object_name,
-                ExtraArgs={'MetaData':meta_data}
+                ExtraArgs={'Metadata':meta_data}
             )
             record = meta_data.update({'object_key':object_name, 'object_bucket':self.bucket})
             # self.sync_sheet.append(record, ignore_index=True)

@@ -1,4 +1,4 @@
-from metasync import S3MetaSync
+from .metasync import S3MetaSync
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
